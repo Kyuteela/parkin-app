@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0F1117">
+<title>Konfirmasi Pesanan</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="screen">
+
+  <div class="header">
+    <button class="header-back" onclick="history.back()">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div>
+      <div class="header-title">Konfirmasi Pesanan</div>
+      <div class="header-sub">Slot A4 &middot; Parkir UB Gate 3</div>
+    </div>
+  </div>
+
+  <div class="stepper">
+    <div class="step-item">
+      <div class="step-circle">1</div>
+      <div class="step-label">Kendaraan</div>
+    </div>
+    <div class="step-connector"></div>
+    <div class="step-item">
+      <div class="step-circle">2</div>
+      <div class="step-label">Slot</div>
+    </div>
+    <div class="step-connector"></div>
+    <div class="step-item">
+      <div class="step-circle">3</div>
+      <div class="step-label">Konfirmasi</div>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <div class="location-card">
+      <div class="location-icon">P</div>
+      <div class="location-info">
+        <h3>Parkir UB Gate 3</h3>
+        <p>Jl. Veteran, UB &middot; Slot A4</p>
+      </div>
+    </div>
+
+    <div class="details-card">
+      <div class="detail-row">
+        <span class="detail-label">Jenis Kendaraan</span>
+        <span class="detail-value">Motor</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Slot Parkir</span>
+        <span class="detail-value">A4 &mdash; Zona A</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Waktu Mulai</span>
+        <span class="detail-value">09.30 WIB</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Estimasi Durasi</span>
+        <span class="detail-value">1 Jam</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Waktu Selesai</span>
+        <span class="detail-value">10.30 WIB</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Total Biaya</span>
+        <span class="detail-value price">Rp 2.000</span>
+      </div>
+    </div>
+
+    <div class="warning-banner">
+      <svg class="warn-icon" viewBox="0 0 24 24" fill="none" stroke="#D4A520" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+        <line x1="12" y1="9" x2="12" y2="13"/>
+        <line x1="12" y1="17" x2="12.01" y2="17"/>
+      </svg>
+      <p>Slot dikunci 10 menit. Segera bayar untuk konfirmasi reservasi.</p>
+    </div>
+
+    <div class="countdown-wrap">
+      <div class="countdown-label">Waktu tersisa</div>
+      <div class="countdown-timer" id="timer">10:00</div>
+    </div>
+
+  </div>
+
+  <div class="btn-group">
+    <button class="btn-primary" id="btnPay" onclick="handlePayment()">Lanjutkan Pembayaran</button>
+    <button class="btn-secondary" onclick="openCancelModal()">Batalkan Reservasi</button>
+  </div>
+
+</div>
+
+<div class="modal-backdrop" id="cancelModal" onclick="closeCancelModal(event)">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-title">Batalkan Reservasi?</div>
+    <div class="modal-body">Slot parkir A4 akan dilepas dan tidak dapat dikembalikan. Apakah kamu yakin ingin membatalkan?</div>
+    <div class="modal-btns">
+      <button class="modal-btn-cancel" onclick="closeCancelModal()">Kembali</button>
+      <button class="modal-btn-confirm" onclick="confirmCancel()">Ya, Batalkan</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+:root{
+  --primary: #1C2033;
+  --primary-dark: #2E3352;
+  --accent: #FF6B35;
+  --accent-light: #FFF0EA;
+
+  --background: #FFFFFF;
+  --surface: #F5F6FA;
+
+  --text-primary: #1F2235;
+  --text-secondary: #6B7280;
+
+  --radius-card: 20px;
+  --radius-button: 16px;
+  --radius-pill: 999px;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter', sans-serif;
+}
+
+body{
+  background:#ECECEC;
+  display:flex;
+  justify-content:center;
+  min-height:100vh;
+}
+
+.mobile-app{
+  width:390px;
+  min-height:100vh;
+  background:white;
+  position:relative;
+  overflow:hidden;
+}
+
+/* HEADER */
+
+.header{
+  background:var(--primary);
+  padding:26px 24px 34px;
+  color:white;
+  border-bottom-left-radius:28px;
+  border-bottom-right-radius:28px;
+}
+
+.back-button{
+  font-size:20px;
+  margin-bottom:12px;
+  cursor:pointer;
+}
+
+.page-title{
+  font-size:22px;
+  font-weight:600;
+  margin-bottom:6px;
+}
+
+.page-subtitle{
+  font-size:14px;
+  color:#B7BDD3;
+}
+
+.content{
+  padding:24px;
+  padding-bottom:140px;
+}
+
+.steps{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:34px;
+  position:relative;
+}
+
+.steps::before{
+  content:"";
+  position:absolute;
+  top:16px;
+  left:55px;
+  right:55px;
+  height:3px;
+  background:#D9DEE8;
+}
+
+.step{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  z-index:2;
+}
+
+.step-circle{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  background:#D9DEE8;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#8C92A7;
+  font-size:14px;
+  font-weight:600;
+}
+
+.step.active .step-circle{
+  background:var(--accent);
+  color:white;
+}
+
+.step-label{
+  margin-top:10px;
+  font-size:13px;
+  color:#8C92A7;
+}
+
+.step.active .step-label{
+  color:var(--accent);
+}
+
+.legend{
+  display:flex;
+  gap:28px;
+  margin-bottom:34px;
+}
+
+.legend-item{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  color:var(--text-secondary);
+}
+
+.legend-color{
+  width:14px;
+  height:14px;
+  border-radius:4px;
+}
+
+.legend-color.available{
+  background:#CDEBD4;
+}
+
+.legend-color.occupied{
+  background:#F2D6D6;
+}
+
+.legend-color.selected{
+  background:#F4E5DF;
+}
+
+.parking-section{
+  margin-bottom:34px;
+}
+
+.section-title{
+  font-size:18px;
+  font-weight:600;
+  margin-bottom:16px;
+  color:var(--text-primary);
+}
+
+.slot-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:16px;
+}
+
+.slot{
+  height:52px;
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:500;
+  cursor:pointer;
+  transition:0.2s;
+  user-select:none;
+}
+
+.slot.available{
+  background:#CDEBD4;
+  color:#15803D;
+}
+
+.slot.occupied{
+  background:#F2D6D6;
+  color:#DC2626;
+  cursor:not-allowed;
+}
+
+.slot.selected{
+  background:#F4E5DF;
+  color:var(--accent);
+}
+
+.slot.active-slot{
+  border:2px solid var(--accent);
+}
+
+.selected-slot-card{
+  background:var(--accent-light);
+  border-radius:20px;
+  padding:18px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.selected-label{
+  font-size:13px;
+  color:#D9652F;
+  margin-bottom:8px;
+}
+
+.selected-slot-name{
+  font-size:30px;
+  font-weight:700;
+  color:var(--accent);
+}
+
+.vehicle-badge{
+  background:var(--accent);
+  color:white;
+  padding:10px 20px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:500;
+}
+
+.bottom-bar{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  padding:24px;
+  background:white;
+}
+
+.primary-dark-button{
+  width:100%;
+  border:none;
+  background:var(--primary);
+  color:white;
+  padding:18px;
+  border-radius:18px;
+  font-size:17px;
+  font-weight:600;
+  cursor:pointer;
+}

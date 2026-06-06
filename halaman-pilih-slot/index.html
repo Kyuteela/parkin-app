@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>ParkIn - Pilih Slot</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="mobile-app">
+
+    <div class="header">
+
+      <div class="back-button">
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
+
+      <div class="page-title">
+        Pilih Slot
+      </div>
+
+      <div class="page-subtitle">
+        Parkir UB Gate 3
+      </div>
+
+    </div>
+
+    <div class="content">
+
+      <div class="steps">
+
+        <div class="step active">
+          <div class="step-circle">1</div>
+          <div class="step-label">Kendaraan</div>
+        </div>
+
+        <div class="step active">
+          <div class="step-circle">2</div>
+          <div class="step-label">Slot</div>
+        </div>
+
+        <div class="step">
+          <div class="step-circle">3</div>
+          <div class="step-label">Konfirmasi</div>
+        </div>
+
+      </div>
+
+      <div class="legend">
+
+        <div class="legend-item">
+          <div class="legend-color available"></div>
+          <span>Tersedia</span>
+        </div>
+
+        <div class="legend-item">
+          <div class="legend-color occupied"></div>
+          <span>Terisi</span>
+        </div>
+
+        <div class="legend-item">
+          <div class="legend-color selected"></div>
+          <span>Dipilih</span>
+        </div>
+
+      </div>
+
+      <div class="parking-section">
+
+        <div class="section-title">
+          Zona A — Motor
+        </div>
+
+        <div class="slot-grid">
+
+          <div class="slot available">A1</div>
+          <div class="slot available">A2</div>
+          <div class="slot occupied">A3</div>
+          <div class="slot selected active-slot">A4</div>
+
+          <div class="slot occupied">A5</div>
+          <div class="slot available">A6</div>
+          <div class="slot available">A7</div>
+          <div class="slot occupied">A8</div>
+
+        </div>
+
+      </div>
+
+      <div class="parking-section">
+
+        <div class="section-title">
+          Zona B — Motor
+        </div>
+
+        <div class="slot-grid">
+
+          <div class="slot occupied">B1</div>
+          <div class="slot occupied">B2</div>
+          <div class="slot available">B3</div>
+          <div class="slot available">B4</div>
+
+          <div class="slot available">B5</div>
+          <div class="slot occupied">B6</div>
+
+        </div>
+
+      </div>
+
+      <div class="selected-slot-card">
+
+        <div>
+
+          <div class="selected-label">
+            Slot Dipilih
+          </div>
+
+          <div class="selected-slot-name" id="selectedSlotText">
+            A4 — Zona A
+          </div>
+
+        </div>
+
+        <div class="vehicle-badge">
+          Motor
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="bottom-bar">
+
+      <button class="primary-dark-button" id="confirmButton">
+        Konfirmasi Pesanan
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

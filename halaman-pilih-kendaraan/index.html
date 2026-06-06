@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>ParkIn</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="mobile-app">
+
+    <div class="header">
+
+      <div class="back-button">
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
+
+      <div class="page-title">
+        Pesan Parkir
+      </div>
+
+      <div class="page-subtitle">
+        Parkir UB Gate 3
+      </div>
+
+    </div>
+
+    <div class="content">
+
+      <div class="steps">
+
+        <div class="step active">
+          <div class="step-circle">1</div>
+          <div class="step-label">Kendaraan</div>
+        </div>
+
+        <div class="step">
+          <div class="step-circle">2</div>
+          <div class="step-label">Slot</div>
+        </div>
+
+        <div class="step">
+          <div class="step-circle">3</div>
+          <div class="step-label">Konfirmasi</div>
+        </div>
+
+      </div>
+
+      <div class="section">
+
+        <div class="section-title">
+          Jenis Kendaraan
+        </div>
+
+        <div class="vehicle-grid">
+
+          <div class="vehicle-card active" data-price="2000">
+
+            <div class="vehicle-icon">
+              <i class="fa-solid fa-motorcycle"></i>
+            </div>
+
+            <div class="vehicle-name">
+              Motor
+            </div>
+
+            <div class="vehicle-price">
+              Rp 2.000/jam
+            </div>
+
+          </div>
+
+          <div class="vehicle-card" data-price="5000">
+
+            <div class="vehicle-icon">
+              <i class="fa-solid fa-car"></i>
+            </div>
+
+            <div class="vehicle-name">
+              Mobil
+            </div>
+
+            <div class="vehicle-price">
+              Rp 5.000/jam
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="section">
+
+        <div class="section-title">
+          Estimasi Durasi
+        </div>
+
+        <div class="duration-list">
+
+          <button class="duration-btn active" data-hour="1">
+            1 Jam
+          </button>
+
+          <button class="duration-btn" data-hour="2">
+            2 Jam
+          </button>
+
+          <button class="duration-btn" data-hour="3">
+            3 Jam
+          </button>
+
+          <button class="duration-btn" data-hour="4">
+            Custom
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="section">
+
+        <div class="section-title">
+          Waktu Mulai
+        </div>
+
+        <div class="start-time">
+          Sekarang · 09.30 WIB
+        </div>
+
+      </div>
+
+      <div class="estimate-card">
+
+        <div class="estimate-left">
+
+          <small>Estimasi Biaya</small>
+
+          <div class="estimate-price" id="totalPrice">
+            Rp 2.000
+          </div>
+
+        </div>
+
+        <div class="estimate-right" id="estimateDetail">
+          1 jam · Motor <br>
+          Belum termasuk denda
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="bottom-bar">
+
+      <button class="primary-button" id="nextButton">
+        Pilih Slot Parkir
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

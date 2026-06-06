@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkIn - Detail Lokasi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="phone-frame">
+        
+        <div class="scrollable-content">
+            
+            <div class="map-preview-container">
+                <div class="map-grid">
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                </div>
+
+                <div class="map-marker marker-gate3">
+                    <div class="marker-label">Parkir UB Gate 3</div>
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="36" height="36" rx="18" fill="#FFF0EA"/>
+                        <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black" stroke-opacity="0.5"/>
+                        <g clip-path="url(#clip0_181_30)">
+                        <rect width="24" height="24" transform="translate(6 6)" fill="#FFF0EA"/>
+                        <path d="M18 8C14.13 8 11 11.13 11 15C11 16.74 11.5 18.37 12.41 19.84C13.36 21.38 14.61 22.7 15.57 24.24C16.04 24.99 16.38 25.69 16.74 26.5C17 27.05 17.21 28 18 28C18.79 28 19 27.05 19.25 26.5C19.62 25.69 19.95 24.99 20.42 24.24C21.38 22.71 22.63 21.39 23.58 19.84C24.5 18.37 25 16.74 25 15C25 11.13 21.87 8 18 8ZM18 17.75C16.62 17.75 15.5 16.63 15.5 15.25C15.5 13.87 16.62 12.75 18 12.75C19.38 12.75 20.5 13.87 20.5 15.25C20.5 16.63 19.38 17.75 18 17.75Z" fill="#FF6B35"/>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="map-marker marker-current">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="9.5" cy="9.5" r="9.5" fill="#C4D9FC"/>
+                        <circle cx="9.50029" cy="9.50001" r="6.04545" fill="#3B82F6"/>
+                        <circle cx="9.50009" cy="9.50003" r="2.59091" fill="#F5F5F5"/>
+                    </svg>
+                </div>
+            </div>
+
+            <section class="main-info-section">
+                <div class="title-row">
+                    <h1 class="parking-title">Parkir UB Gate 3</h1>
+                    <span class="status-badge">Buka</span>
+                </div>
+                <p class="parking-address">Jl. Veteran, Universitas Brawijaya</p>
+                
+                <div class="rating-row">
+                    <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24">
+                        <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.784 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z"/>
+                    </svg>
+                    <span class="rating-score">4.8</span>
+                    <span class="rating-count">(128 ulasan)</span>
+                </div>
+
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <span class="highlight-value orange-text">12</span>
+                        <span class="highlight-label">Slot Tersedia</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-value">2rb/jam</span>
+                        <span class="highlight-label">Tarif</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-value">0.3 km</span>
+                        <span class="highlight-label">Jarak</span>
+                    </div>
+                </div>
+
+                <div class="details-list">
+                    <div class="detail-item">
+                        <div class="icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="9" stroke="#1C2033" stroke-width="2"/>
+                                <path d="M16.5 12H12.25C12.1119 12 12 11.8881 12 11.75V8.5" stroke="#1C2033" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="detail-text">
+                            <h3>Jam Operasional</h3>
+                            <p>06.00 – 22.00 WIB</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <div class="icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 11H4.04548M4.04548 11H19.9545M4.04548 11C4.05661 10.9485 4.06977 10.8975 4.08496 10.8471C4.12122 10.7268 4.17242 10.6111 4.27539 10.3795L5.82165 6.90039C6.12737 6.21253 6.28048 5.8684 6.5221 5.61621C6.73568 5.39329 6.99764 5.223 7.28809 5.11837C7.61667 5 7.99336 5 8.74609 5H15.2536C16.0063 5 16.3833 5 16.7119 5.11837C17.0024 5.223 17.264 5.39329 17.4775 5.61621C17.719 5.86823 17.8718 6.21208 18.1771 6.899L19.7296 10.3921C19.8289 10.6154 19.8794 10.729 19.915 10.8471C19.9301 10.8975 19.9433 10.9485 19.9545 11M4.04548 11C4.03302 11.0576 4.0231 11.1158 4.01572 11.1743C4 11.299 4 11.4257 4 11.6792V17M19.9545 11H21M19.9545 11C19.967 11.0576 19.977 11.1158 19.9844 11.1743C20 11.2982 20 11.4242 20 11.6746V17.0001M20 17.0001L16 17.0001M20 17.0001V17.9999C20 19.1045 19.1046 20 18 20C16.8954 20 16 19.1046 16 18V17.0001M4 17H8L16 17.0001M8 17V18C8 19.1046 7.10457 20 6 20C4.89543 20 4 19.1046 4 18V17" stroke="#1C2033" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="detail-text">
+                            <h3>Jenis Kendaraan</h3>
+                            <p>Motor & Mobil</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <div class="icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="6" width="18" height="13" rx="2" stroke="#1C2033" stroke-width="2"/>
+                                <path d="M7 15H7.01" stroke="#1C2033" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 11H21" stroke="#1C2033" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="detail-text">
+                            <h3>Metode Pembayaran</h3>
+                            <p>QRIS &middot; GoPay &middot; OVO &middot; Dana</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer-action-container">
+            <button class="btn-primary-action" id="btnPesan">Pesan Slot Parkir</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

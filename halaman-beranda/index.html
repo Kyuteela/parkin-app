@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkIn - Beranda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="phone-frame">
+        
+        <header class="header-section">
+            <p class="greeting">Selamat datang,</p>
+            <h2 class="user-name">Muhammad Ushaim</h2>
+            <div class="search-box">
+                <input type="text" placeholder="Cari lokasi parkir...">
+            </div>
+        </header>
+
+        <main class="main-content">
+            
+            <div class="map-container">
+                <div class="map-grid">
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                    <div class="map-block"></div>
+                </div>
+
+                <div class="map-marker marker-pujas">
+                    <div class="marker-label">Parkir Pujas UB</div>
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="36" height="36" rx="18" fill="#F5F6FA"/>
+                        <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black" stroke-opacity="0.5"/>
+                        <g clip-path="url(#clip0_4_2)">
+                        <rect width="24" height="24" transform="translate(6 6)" fill="#FFF0EA"/>
+                        <path d="M30 6H6V30H30V6Z" fill="#F5F6FA"/>
+                        <path d="M18 8C14.13 8 11 11.13 11 15C11 16.74 11.5 18.37 12.41 19.84C13.36 21.38 14.61 22.7 15.57 24.24C16.04 24.99 16.38 25.69 16.74 26.5C17 27.05 17.21 28 18 28C18.79 28 19 27.05 19.25 26.5C19.62 25.69 19.95 24.99 20.42 24.24C21.38 22.71 22.63 21.39 23.58 19.84C24.5 18.37 25 16.74 25 15C25 11.13 21.87 8 18 8ZM18 17.75C16.62 17.75 15.5 16.63 15.5 15.25C15.5 13.87 16.62 12.75 18 12.75C19.38 12.75 20.5 13.87 20.5 15.25C20.5 16.63 19.38 17.75 18 17.75Z" fill="#6B7280"/>
+                        </g>
+                        <defs><clipPath id="clip0_4_2"><rect width="24" height="24" fill="white" transform="translate(6 6)"/></clipPath></defs>
+                    </svg>
+                </div>
+
+                <div class="map-marker marker-gate3">
+                    <div class="marker-label">Parkir UB Gate 3</div>
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="36" height="36" rx="18" fill="#FFF0EA"/>
+                        <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black" stroke-opacity="0.5"/>
+                        <g clip-path="url(#clip0_181_30)">
+                        <rect width="24" height="24" transform="translate(6 6)" fill="#FFF0EA"/>
+                        <path d="M18 8C14.13 8 11 11.13 11 15C11 16.74 11.5 18.37 12.41 19.84C13.36 21.38 14.61 22.7 15.57 24.24C16.04 24.99 16.38 25.69 16.74 26.5C17 27.05 17.21 28 18 28C18.79 28 19 27.05 19.25 26.5C19.62 25.69 19.95 24.99 20.42 24.24C21.38 22.71 22.63 21.39 23.58 19.84C24.5 18.37 25 16.74 25 15C25 11.13 21.87 8 18 8ZM18 17.75C16.62 17.75 15.5 16.63 15.5 15.25C15.5 13.87 16.62 12.75 18 12.75C19.38 12.75 20.5 13.87 20.5 15.25C20.5 16.63 19.38 17.75 18 17.75Z" fill="#FF6B35"/>
+                        </g>
+                        <defs><clipPath id="clip0_181_30"><rect width="24" height="24" fill="white" transform="translate(6 6)"/></clipPath></defs>
+                    </svg>
+                </div>
+
+                <div class="map-marker marker-current">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="9.5" cy="9.5" r="9.5" fill="#C4D9FC"/>
+                        <circle cx="9.50029" cy="9.50001" r="6.04545" fill="#3B82F6"/>
+                        <circle cx="9.50009" cy="9.50003" r="2.59091" fill="#F5F5F5"/>
+                    </svg>
+                </div>
+            </div>
+
+            <section class="parking-section">
+                <h3 class="section-title">Parkir Terdekat</h3>
+                
+                <div class="parking-list">
+                    <div class="parking-card" id="cardGate3">
+                        <div class="card-left">
+                            <div class="p-icon-bg orange-bg"><span>P</span></div>
+                            <div class="card-info">
+                                <h4>Parkir UB Gate 3</h4>
+                                <p>0.3 km &middot; Rp 2.000/jam</p>
+                            </div>
+                        </div>
+                        <div class="badge badge-available">12 slot</div>
+                    </div>
+
+                    <div class="parking-card" id="cardPujas">
+                        <div class="card-left">
+                            <div class="p-icon-bg gray-bg"><span>P</span></div>
+                            <div class="card-info">
+                                <h4>Parkir Pujas UB</h4>
+                                <p>1.2 km &middot; Rp 2.000/jam</p>
+                            </div>
+                        </div>
+                        <div class="badge badge-full">Penuh</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item active">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12.7596C5 11.4019 5 10.723 5.27446 10.1262C5.54892 9.52949 6.06437 9.08769 7.09525 8.20407L8.09525 7.34693C9.95857 5.7498 10.8902 4.95123 12 4.95123C13.1098 4.95123 14.0414 5.7498 15.9047 7.34693L16.9047 8.20407C17.9356 9.08769 18.4511 9.52949 18.7255 10.1262C19 10.723 19 11.4019 19 12.7596V17C19 18.8856 19 19.8284 18.4142 20.4142C17.8284 21 16.8856 21 15 21H9C7.11438 21 6.17157 21 5.58579 20.4142C5 19.8284 5 18.8856 5 17V12.7596Z" stroke="#FF6B35" stroke-width="2"/>
+                    <path d="M14.5 21V16C14.5 15.4477 14.0523 15 13.5 15H10.5C9.94772 15 9.5 15.4477 9.5 16V21" stroke="#FF6B35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Beranda</span>
+            </a>
+            <a href="#" class="nav-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="7" stroke="#33363F" stroke-width="2"/>
+                    <path d="M20 20L17 17" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>Cari</span>
+            </a>
+            <a href="#" class="nav-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5" y="4" width="14" height="17" rx="2" stroke="#33363F" stroke-width="2"/>
+                    <path d="M9 9H15" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M9 13H15" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M9 17H13" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>Riwayat</span>
+            </a>
+            <a href="#" class="nav-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="7" r="4" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M5.33788 18.3206C5.99897 15.5269 8.77173 14 11.6426 14H12.3574C15.2283 14 18.001 15.5269 18.6621 18.3206C18.79 18.8611 18.8917 19.4268 18.9489 20.0016C19.0036 20.5512 18.5523 21 18 21H6C5.44772 21 4.99642 20.5512 5.0511 20.0016C5.1083 19.4268 5.20997 18.8611 5.33788 18.3206Z" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>Profil</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

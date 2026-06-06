@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F9FAFB;
+}
+
+.phone-frame {
+    width: 360px;
+    height: 780px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header-section {
+    background-color: #1F212D;
+    padding: 24px 20px 20px 20px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    z-index: 10;
+}
+.greeting {
+    color: #9CA3AF;
+    font-size: 13px;
+}
+.user-name {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.search-box input {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: none;
+    font-size: 14px;
+    color: #1F212D;
+    background-color: #FFFFFF;
+}
+.search-box input::placeholder {
+    color: #A1A7B3;
+}
+
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 80px; 
+    background-color: #FFFFFF;
+}
+
+.map-container {
+    width: 100%;
+    height: 250px;
+    background-color: #E5E7EB; 
+    position: relative;
+    overflow: hidden;
+}
+.map-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 12px;
+    opacity: 0.8;
+}
+.map-block {
+    background-color: #BAC7D5; 
+    height: 55px;
+    border-radius: 8px;
+}
+
+.map-marker {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.marker-label {
+    background-color: #1F212D;
+    color: #FFFFFF;
+    font-size: 9px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    white-space: nowrap;
+}
+.marker-pujas {
+    top: 10px;
+    right: 96px;
+}
+.marker-gate3 {
+    top: 76px;
+    left: 80px;
+}
+.marker-current {
+    top: 130px;
+    right: 120px;
+}
+
+.parking-section {
+    padding: 20px;
+}
+.section-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1F212D;
+    margin-bottom: 16px;
+}
+.parking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.parking-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 14px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.parking-card:active {
+    transform: scale(0.98);
+}
+.card-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.p-icon-bg {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-icon-bg span {
+    font-weight: 700;
+    font-size: 18px;
+}
+.orange-bg {
+    background-color: #FFF0EA;
+    color: #FF6B35;
+}
+.gray-bg {
+    background-color: #F5F6FA;
+    color: #6B7280;
+}
+.card-info h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1F212D;
+}
+.card-info p {
+    font-size: 12px;
+    color: #6B7280;
+    margin-top: 2px;
+}
+
+.badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.badge-available {
+    background-color: #E8F8F0;
+    color: #10B981;
+}
+.badge-full {
+    background-color: #FEE2E2;
+    color: #EF4444;
+}
+
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #F3F4F6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 4px;
+    z-index: 10;
+}
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 4px;
+}
+.nav-item span {
+    font-size: 11px;
+    font-weight: 500;
+    color: #A1A7B3;
+}
+.nav-item.active span {
+    color: #FF6B35;
+}
